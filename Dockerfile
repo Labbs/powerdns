@@ -1,7 +1,5 @@
 FROM alpine:latest
 
-LABEL maintainer="Ramazan APAYDIN <apaydin541@gmail.com>"
-
 # Install PowerDNS & SQLite Backend
 RUN apk --update --no-cache add pdns pdns-backend-sqlite3 && \
     rm -rf /var/cache/apk/*
